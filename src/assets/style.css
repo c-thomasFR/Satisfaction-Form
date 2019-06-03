@@ -1,0 +1,91 @@
+/* Classe utilisée lors du drag start du slider pour réaliser animation fade up */
+.fadeInMoveUp{
+    animation-duration: 0.5s;
+    animation-name: slideInUp;
+}
+/* Classe utilisée lors du drag end du slider pour réaliser animation fade down */
+.fadeInMoveDown
+{
+    animation-duration: 0.5s;
+    animation-name: slideInDown;
+}
+
+/* Effet de fade avec mouvement vers le bas */
+@keyframes slideInDown
+{
+    from
+    {
+        visibility:visible;
+    }
+    0%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to
+    {
+        visibility:hidden;
+    }
+}
+/* Effet de fade avec mouvement vers le haut */
+@keyframes slideInUp
+{
+   0%
+    {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100%
+    {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+/* Couleur mauve sur les emojis du slider */
+.emoji svg
+{
+    fill:#B669F5;
+}
+#app
+{
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    margin-top: 60px;
+}
+/* Pour réaliser effet carte */
+#card-satisfaction
+{
+    background-color:white;
+    border-radius: 16px;
+}
+
+/* CSS sur le bouton submit (forme en pillule, couleur,...) */
+#submit
+{
+    font-family: Helvetica;
+    color:white;
+    font-size: 0.75em;
+    font-weight:600;
+    letter-spacing: .05em;
+    background-color:#B669F5;
+    border:none;
+    border-radius: 16px;
+    width:200px;
+    height:35px;
+    line-height:15px;
+}
+/* CSS sur le titre (police, couleur) */
+h3
+{
+    color: #6E6673;
+    font-family: Helvetica;
+    font-weight:bold;
+}
